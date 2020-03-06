@@ -12,6 +12,10 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
 public class SignupActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,28 +46,11 @@ public class SignupActivity extends AppCompatActivity {
                         ProgressBar pb = findViewById(R.id.progressBar_su);
                         pb.setVisibility(View.VISIBLE);
 
-                        final User user = new User(userName.getText().toString(),
+                        EditText phoneNumber = findViewById(R.id.phoneNumber_inp_su);
+
+                        final User user = User.make_user(userName.getText().toString(),
                                 email.getText().toString(),
-                                password.getText().toString());
-                            new Thread(){
-                                @Override
-                                public void run() {
-                                    Intent email_send = new Intent(Intent.ACTION_SEND);
-                                    email_send.putExtra(Intent.EXTRA_EMAIL, new String[]{ user.getEmail()});
-                                    email_send.putExtra(Intent.EXTRA_SUBJECT, "Sign up");
-                                    email_send.putExtra(Intent.EXTRA_TEXT, "Welcome to our App");
-
-//need this to prompts email client only
-                                    email_send.setType("message/rfc822");
-                                    try {
-                                        startActivity(Intent.createChooser(email_send, "Send mail..."));
-                                        finish();
-                                    }catch (android.content.ActivityNotFoundException ex){
-                                        Toast.makeText(SignupActivity.this, "There are no email clients installed.", Toast.LENGTH_SHORT).show();
-
-                                    }
-                                }
-                            }.start();
+                                password.getText().toString(),phoneNumber.getText().toString());
 
                         pb.setVisibility(View.GONE);
                         startActivity(new Intent(SignupActivity.this, ProfileActivity.class));
@@ -78,6 +65,5 @@ public class SignupActivity extends AppCompatActivity {
         });
 
     }
-
 
 }

@@ -6,20 +6,33 @@ class User {
     private String username;
     private String email;
     private String password;
+    private String phoneNumber;
     private static HashMap<String, User> users = new HashMap<>();
 
-    User(String username, String email, String password) throws Exception{
+    public static User make_user(String username, String email, String password,String phoneNumber) throws Exception{
         User user=users.get(username);
         if( user == null) {
-            this.username = username;
-            this.email = email;
-            this.password = password;
+            user = new User(username,email,password,phoneNumber);
+            users.put(username,user);
+            return user;
         }
         else {
             throw new Exception(StrnigEnum.username_exist.getMessage());
         }
 
     }
+
+    private User(String username, String email, String password,String phoneNumber) {
+            this.username = username;
+            this.email = email;
+            this.password = password;
+            this.phoneNumber = phoneNumber;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
     static User find_user(String username, String password) throws Exception{
         try{
             User user =  users.get(username);
