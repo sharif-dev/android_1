@@ -5,9 +5,15 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -35,6 +41,21 @@ public class HomeActivity extends AppCompatActivity {
 
             }
         });
+
+        RecyclerView recyclerView = findViewById(R.id.home_view);
+        recyclerView.setHasFixedSize(true);
+        RecyclerView.LayoutManager layoutManager = new StaggeredGridLayoutManager(3,StaggeredGridLayoutManager.VERTICAL);
+        recyclerView.setLayoutManager(layoutManager);
+        CardAdapter adapter = new CardAdapter(createData());
+        recyclerView.setAdapter(adapter);
+    }
+
+    private CardContent[] createData(){
+        ArrayList<CardContent> c= new ArrayList<>() ;
+        for (int i =0 ;i <100;i++){
+            c.add(new CardContent("Name of this"+i, "explain......"+i));
+        }
+        return (CardContent[]) c.toArray();
     }
 
 }

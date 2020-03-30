@@ -10,14 +10,16 @@
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_width="395dp"
+        android:layout_height="37dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:background="@color/gray"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -28,7 +30,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/profile_pr_btn"
+                android:id="@+id/profile_hm_btn"
                 android:layout_width="20dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="30dp"
@@ -39,7 +41,7 @@
                 android:background="@drawable/profile_pressed" />
 
             <Button
-                android:id="@+id/home_pr_btn"
+                android:id="@+id/city_hm_btn"
                 android:layout_width="20dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="50dp"
@@ -50,7 +52,7 @@
                 android:background="@drawable/home" />
 
             <Button
-                android:id="@+id/add_pr_btn"
+                android:id="@+id/add_hm_btn"
                 android:layout_width="20dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="50dp"
@@ -58,7 +60,9 @@
                 android:layout_marginRight="30dp"
                 android:layout_marginBottom="5dp"
                 android:layout_weight="1"
-                android:background="@drawable/add" />
+                android:background="@drawable/add"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="30dp" />
         </LinearLayout>
     </RadioGroup>
 
@@ -68,19 +72,12 @@
         android:layout_height="621dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="228dp"
-            android:layout_height="38dp"
-            tools:layout_editor_absoluteX="26dp"
-            tools:layout_editor_absoluteY="49dp" />
-    </android.support.constraint.ConstraintLayout>
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

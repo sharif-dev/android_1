@@ -8,75 +8,75 @@
     tools:context=".HomeActivity"
     tools:showIn="@layout/activity_home">
 
-        <RadioGroup
-            android:id="@+id/radioGroup"
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="395dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/gray"
+        app:layout_constraintBottom_toTopOf="@+id/home_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:background="@color/gray"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <Button
+                android:id="@+id/profile_hm_btn"
+                android:layout_width="20dp"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/profile" />
 
-                <Button
-                    android:id="@+id/profile_hm_btn"
-                    android:layout_width="20dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginRight="50dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/profile" />
+            <Button
+                android:id="@+id/city_hm_btn"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/home_pressed" />
 
-                <Button
-                    android:id="@+id/city_hm_btn"
-                    android:layout_width="20dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginRight="50dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/home_pressed" />
+            <Button
+                android:id="@+id/add_hm_btn"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/add" />
+        </LinearLayout>
+    </RadioGroup>
 
-                <Button
-                    android:id="@+id/add_hm_btn"
-                    android:layout_width="20dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/add" />
-            </LinearLayout>
-        </RadioGroup>
-
-        <android.support.constraint.ConstraintLayout
-            android:id="@+id/constraintLayout"
-            android:layout_width="0dp"
-            android:layout_height="621dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-
-        </android.support.constraint.ConstraintLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
 
 </android.support.constraint.ConstraintLayout>
