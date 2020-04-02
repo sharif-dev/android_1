@@ -1,6 +1,7 @@
-package edu.sharif.yousefi.first_app;
+package edu.sharif.yousefi.first_app.account;
 
 import java.util.HashMap;
+
 
 class User {
     private String username;

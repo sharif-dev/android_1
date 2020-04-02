@@ -1,4 +1,4 @@
-package edu.sharif.yousefi.first_app;
+package edu.sharif.yousefi.first_app.home;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
@@ -9,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+
+import edu.sharif.yousefi.first_app.R;
 
 public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder> {
     private ArrayList<CardContent> dataset;

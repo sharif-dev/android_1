@@ -1,4 +1,6 @@
-package edu.sharif.yousefi.first_app;
+package edu.sharif.yousefi.first_app.home;
+
+import edu.sharif.yousefi.first_app.R;
 
 public class CardContent {
     private int image;
@@ -8,7 +10,7 @@ public class CardContent {
     public CardContent(String name, String explain){
         this.name = name;
         this.explain = explain;
-        this.image =R.drawable.button_custom;
+        this.image = R.drawable.button_custom;
     }
 
     public String getName() {

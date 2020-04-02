@@ -1,4 +1,4 @@
-package edu.sharif.yousefi.first_app;
+package edu.sharif.yousefi.first_app.account;
 
 enum StrnigEnum {
     incorrect_password("Password is wrong"),
