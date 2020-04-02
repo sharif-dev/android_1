@@ -16,6 +16,18 @@
   
   [activity layout](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/res/layout/activity_home.xml)
   
+  ## fragment
+  [main activity layout](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/res/layout/activity_add.xml)
+  
+  [first fragment layout](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/res/layout/add_fragment.xml)
+  
+  [second fragment layout](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/res/layout/show_fragment.xml)
+  
+  [first fragmentActivity](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/java/edu/sharif/yousefi/first_app/add/AddFragmentActivity.java)
+  
+  [second fragmentActivity](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/java/edu/sharif/yousefi/first_app/add/ShowFragmentActivity.java)
+ 
+  
 # info
 - zahra yousefi jamrani
 - student ID : 97102717
