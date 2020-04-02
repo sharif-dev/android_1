@@ -15,10 +15,9 @@ public class AddActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
-        Button profile_btn = findViewById(R.id.profile_ad_btn);
+
+        Button profile_btn = findViewById(R.id.profile_add_btn);
         profile_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -26,7 +25,7 @@ public class AddActivity extends AppCompatActivity {
             }
         });
 
-        Button home_btn = findViewById(R.id.home_pr_btn);
+        Button home_btn = findViewById(R.id.home_add_btn);
         home_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
