@@ -1,4 +1,4 @@
-package edu.sharif.yousefi.first_app;
+package edu.sharif.yousefi.first_app.HOTP;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

@@ -1,11 +1,14 @@
-package edu.sharif.yousefi.first_app;
+package edu.sharif.yousefi.first_app.profile;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+
+import edu.sharif.yousefi.first_app.R;
+import edu.sharif.yousefi.first_app.add.AddActivity;
+import edu.sharif.yousefi.first_app.home.HomeActivity;
 
 public class ProfileActivity extends AppCompatActivity {
 
@@ -18,7 +21,7 @@ public class ProfileActivity extends AppCompatActivity {
         home_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ProfileActivity.this,HomeActivity.class));
+                startActivity(new Intent(ProfileActivity.this, HomeActivity.class));
             }
         });
 
@@ -26,7 +29,7 @@ public class ProfileActivity extends AppCompatActivity {
         add_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ProfileActivity.this,AddActivity.class));
+                startActivity(new Intent(ProfileActivity.this, AddActivity.class));
 
             }
         });

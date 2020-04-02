@@ -1,19 +1,18 @@
-package edu.sharif.yousefi.first_app;
+package edu.sharif.yousefi.first_app.home;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+
+import edu.sharif.yousefi.first_app.profile.ProfileActivity;
+import edu.sharif.yousefi.first_app.R;
+import edu.sharif.yousefi.first_app.add.AddActivity;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -27,7 +26,7 @@ public class HomeActivity extends AppCompatActivity {
         profile_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this,ProfileActivity.class));
+                startActivity(new Intent(HomeActivity.this, ProfileActivity.class));
 
             }
         });
@@ -36,7 +35,7 @@ public class HomeActivity extends AppCompatActivity {
         add_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this,AddActivity.class));
+                startActivity(new Intent(HomeActivity.this, AddActivity.class));
 
             }
         });

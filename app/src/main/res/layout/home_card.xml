@@ -29,8 +29,8 @@
 
         <TextView
             android:id="@+id/name_card"
-            android:layout_width="147dp"
-            android:layout_height="30dp"
+            android:layout_width="137dp"
+            android:layout_height="29dp"
             android:layout_marginTop="72dp"
             android:background="@color/black_transparent"
             android:text="Name"

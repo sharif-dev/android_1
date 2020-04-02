@@ -3,7 +3,6 @@
     package="edu.sharif.yousefi.first_app">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
@@ -13,24 +12,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".add.ShowActivity"></activity>
+        <activity android:name=".add.AddFragmentActivity" />
         <activity
-            android:name=".AddActivity"
+            android:name=".CycleActivity"
+            android:label="@string/title_activity_cycle"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".add.AddActivity"
             android:label="@string/title_activity_add"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".home.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ProfileActivity"
+            android:name=".profile.ProfileActivity"
             android:label="@string/title_activity_weather"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".SignupActivity"
+            android:name=".account.SignupActivity"
             android:label="@string/title_activity_signup"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".account.LoginActivity"
             android:label="@string/title_activity_login"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity">
