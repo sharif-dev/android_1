@@ -10,7 +10,7 @@
   [layout](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/res/layout/activity_main.xml)
   
   ## recycler view with card view
-  [Activity](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/java/edu/sharif/yousefi/first_app/HomeActivity.java)
+  [Activity](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/java/edu/sharif/yousefi/first_app/home/HomeActivity.java)
   
   [card layout](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/res/layout/home_card.xml)
   
