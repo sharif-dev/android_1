@@ -21,8 +21,7 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+
 
         Button profile_btn = findViewById(R.id.profile_hm_btn);
         profile_btn.setOnClickListener(new View.OnClickListener() {
@@ -50,12 +49,12 @@ public class HomeActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
     }
 
-    private CardContent[] createData(){
+    private ArrayList<CardContent> createData(){
         ArrayList<CardContent> c= new ArrayList<>() ;
         for (int i =0 ;i <100;i++){
             c.add(new CardContent("Name of this"+i, "explain......"+i));
         }
-        return (CardContent[]) c.toArray();
+        return c;
     }
 
 }

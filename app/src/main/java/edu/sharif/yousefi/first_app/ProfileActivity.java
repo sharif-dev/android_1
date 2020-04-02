@@ -13,8 +13,6 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         Button home_button = findViewById(R.id.home_pr_btn);
         home_button.setOnClickListener(new View.OnClickListener() {

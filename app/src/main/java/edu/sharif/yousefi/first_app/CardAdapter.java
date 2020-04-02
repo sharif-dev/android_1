@@ -8,10 +8,12 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder> {
-    private CardContent[] dataset;
+import java.util.ArrayList;
 
-    public CardAdapter(CardContent[] dataset) {
+public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder> {
+    private ArrayList<CardContent> dataset;
+
+    public CardAdapter(ArrayList<CardContent> dataset) {
         this.dataset = dataset;
     }
 
@@ -36,16 +38,16 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder> {
     public void onBindViewHolder(@NonNull CardAdapter.ViewHolder viewHolder, int i) {
         CardView cardView = viewHolder.cardView;
         TextView name = cardView.findViewById(R.id.name_card);
-        name.setText(dataset[i].getName());
+        name.setText(dataset.get(i).getName());
         TextView explain = cardView.findViewById(R.id.explain_card);
-        explain.setText(dataset[i].getExplain());
+        explain.setText(dataset.get(i).getExplain());
         ImageView image = cardView.findViewById(R.id.image_card);
-        image.setImageResource(dataset[i].getImage());
+        image.setImageResource(dataset.get(i).getImage());
 
     }
 
     @Override
     public int getItemCount() {
-        return dataset.length;
+        return dataset.size();
     }
 }

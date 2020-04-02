@@ -8,7 +8,7 @@ public class CardContent {
     public CardContent(String name, String explain){
         this.name = name;
         this.explain = explain;
-        this.image = R.drawable.ic_launcher_background;
+        this.image =R.drawable.button_custom;
     }
 
     public String getName() {
