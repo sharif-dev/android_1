@@ -77,23 +77,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup">
 
-        <fragment
-            android:id="@+id/add_fragment"
+        <FrameLayout
+            android:id="@+id/add_fragment_container"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             tools:layout="@layout/add_fragment">
 
-        </fragment>
+        </FrameLayout>
 
-        <fragment
-            android:id="@+id/show_fragment"
+        <FrameLayout
+            android:id="@+id/show_fragment_container"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             tools:layout="@layout/show_fragment">
 
-        </fragment>
+        </FrameLayout>
 
 
     </LinearLayout>
