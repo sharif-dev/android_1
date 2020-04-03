@@ -23,9 +23,9 @@
   
   [second fragment layout](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/res/layout/show_fragment.xml)
   
-  [first fragmentActivity](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/java/edu/sharif/yousefi/first_app/add/AddFragmentActivity.java)
+  [first fragmentActivity](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/java/edu/sharif/yousefi/first_app/add/AddFragment.java)
   
-  [second fragmentActivity](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/java/edu/sharif/yousefi/first_app/add/ShowFragmentActivity.java)
+  [second fragmentActivity](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/java/edu/sharif/yousefi/first_app/add/ShowFragment.java)
  
   
 # info
