@@ -2,6 +2,7 @@ package edu.sharif.yousefi.first_app.add;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -10,7 +11,9 @@ import edu.sharif.yousefi.first_app.home.HomeActivity;
 import edu.sharif.yousefi.first_app.profile.ProfileActivity;
 import edu.sharif.yousefi.first_app.R;
 
-public class AddActivity extends AppCompatActivity {
+public class AddActivity extends AppCompatActivity  implements SendMessageF{
+    ShowFragment showFragment;
+    AddFragment addFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +37,37 @@ public class AddActivity extends AppCompatActivity {
             }
         });
 
+
+        // add fragments
+        FragmentManager fragmentManager = getSupportFragmentManager();
+
+        showFragment =  (ShowFragment) fragmentManager.findFragmentByTag("show");
+        if (showFragment == null) {
+            showFragment = new ShowFragment();
+            fragmentManager.beginTransaction().add(R.id.show_fragment_container, showFragment, "show").commit();
+        }
+
+        addFragment = (AddFragment) fragmentManager.findFragmentByTag("add");
+        if (addFragment == null) {
+            addFragment = new AddFragment();
+            fragmentManager.beginTransaction().add(R.id.add_fragment_container, addFragment, "add").commit();
+        }
     }
 
+
+
+    @Override
+    public void sendName(String name) {
+        showFragment.gotName(name);
+    }
+
+    @Override
+    public void sendExplain(String explain) {
+        showFragment.gotExplain(explain);
+    }
+
+    @Override
+    public void sendImage(int image) {
+        showFragment.gotImage(image);
+    }
 }

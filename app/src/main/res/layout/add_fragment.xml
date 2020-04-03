@@ -17,7 +17,7 @@
         app:srcCompat="@drawable/placeHolder" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/name_inp_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -30,7 +30,7 @@
         app:layout_constraintTop_toBottomOf="@+id/profile_img_add" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/explain_inp_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -40,7 +40,20 @@
         android:hint="explain"
         android:inputType="text|textMultiLine"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/name_inp_add" />
+
+    <Button
+        android:id="@+id/result_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_custom"
+        android:text="see Result"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/explain_inp_add" />
 
 
 </android.support.constraint.ConstraintLayout>
