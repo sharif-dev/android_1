@@ -1,16 +1,15 @@
 package edu.sharif.yousefi.first_app.add;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -25,6 +24,10 @@ public class AddFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.add_fragment, container, false);
+        ImageView imageView=view.findViewById(R.id.selection_img);
+        Animation jump = AnimationUtils.loadAnimation(view.getContext(), R.anim.y_move_alpha);
+        imageView.startAnimation(jump);
+
         Button result_btn = view.findViewById(R.id.result_btn);
         result_btn.setOnClickListener(new View.OnClickListener() {
             @Override
