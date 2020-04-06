@@ -28,6 +28,16 @@
   [second fragmentActivity](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/java/edu/sharif/yousefi/first_app/add/ShowFragment.java)
   
   [communicating interface](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/java/edu/sharif/yousefi/first_app/add/SendMessageF.java)
+  
+  ## property animation
+  [activity](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/java/edu/sharif/yousefi/first_app/MainActivity.java)
+  
+  [anim file](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/res/animator/x_move.xml)
+  
+  ## tween animation
+  [activity( here is an fragment)](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/java/edu/sharif/yousefi/first_app/add/AddFragment.java)
+  
+  [anim_file](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/res/anim/y_move_alpha.xml)
  
   
 # info
