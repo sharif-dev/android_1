@@ -19,14 +19,14 @@ import edu.sharif.yousefi.first_app.R;
 
 public class AddFragment extends Fragment {
     private SendMessageF mCallback;
-
+    private ImageView selection;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.add_fragment, container, false);
-        ImageView imageView=view.findViewById(R.id.selection_img);
+        selection=view.findViewById(R.id.selection_img);
         Animation jump = AnimationUtils.loadAnimation(view.getContext(), R.anim.y_move_alpha);
-        imageView.startAnimation(jump);
+        selection.startAnimation(jump);
 
         Button result_btn = view.findViewById(R.id.result_btn);
         result_btn.setOnClickListener(new View.OnClickListener() {
@@ -59,6 +59,7 @@ public class AddFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
         mCallback = null;
+        selection.setAnimation(null);
     }
 }
 
