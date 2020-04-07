@@ -38,6 +38,11 @@
   [activity( here is an fragment)](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/java/edu/sharif/yousefi/first_app/add/AddFragment.java)
   
   [anim_file](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/res/anim/y_move_alpha.xml)
+  
+  ## view animation
+  [drawable](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/res/drawable/avatar_images.xml)
+  
+  [activity](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/java/edu/sharif/yousefi/first_app/profile/ProfileActivity.java)
  
   
 # info
