@@ -9,8 +9,8 @@
                 android:summary="@string/delete_not_use_summery"
                 android:key="@string/delete_not_use_key"
                 android:dialogTitle="@string/dialog_title"
-                android:entries="@array/listOpt"
-                android:entryValues="@array/listVal"
+                android:entries="@array/listOpt_deldte"
+                android:entryValues="@array/listVal_delete"
                 android:defaultValue="12"
                 android:dialogIcon="@drawable/delete_user_icon"
             />
@@ -28,6 +28,29 @@
             android:key="@string/low_data_key"
             android:defaultValue="false"
             />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Sound">
+        <PreferenceScreen
+            android:title="Notification voice"
+            android:key="notification_voice_key"
+            android:persistent="false">
+
+            <ListPreference
+                android:key="voice_key"
+                android:title="Notification Voices" />
+
+            <PreferenceScreen
+                android:title="Voice Provider"
+                android:key="voice_provider_key"
+                />
+            <PreferenceScreen
+                android:title="Volume"
+                android:key="volume_key"
+                />
+
+        </PreferenceScreen>
+
 
     </PreferenceCategory>
 </PreferenceScreen>
