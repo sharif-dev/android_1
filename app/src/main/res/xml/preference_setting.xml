@@ -30,27 +30,36 @@
             />
     </PreferenceCategory>
     <PreferenceCategory
-        android:title="Sound">
+        android:title="@string/sound_title">
         <PreferenceScreen
-            android:title="Notification voice"
-            android:key="notification_voice_key"
+            android:title="@string/notification_sound"
+            android:key="@string/notification_key"
             android:persistent="false">
 
             <ListPreference
-                android:key="voice_key"
-                android:title="Notification Voices" />
+                android:key="@string/voice_key"
+                android:title="@string/notification_voice_title" />
 
             <PreferenceScreen
-                android:title="Voice Provider"
-                android:key="voice_provider_key"
+                android:title="@string/voice_provider_title"
+                android:key="@string/voice_provider_key"
                 />
             <PreferenceScreen
-                android:title="Volume"
-                android:key="volume_key"
+                android:title="@string/volume_title"
+                android:key="@string/volume_key"
                 />
 
         </PreferenceScreen>
 
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/connect_us_title"
+        android:key="@string/connect_key">
+        <Preference
+            android:title="@string/web">
+            <intent android:data="https://github.com/sharif-dev/custom_buttons"
+                android:action="android.intent.action.VIEW"/>
+        </Preference>
 
     </PreferenceCategory>
 </PreferenceScreen>

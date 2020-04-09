@@ -24,6 +24,18 @@
     <string name="status_summary">Write About yourself</string>
     <string name="status_key">status_edit_text</string>
     <string name="status_title">Status</string>
+    <string name="sound_title">Sound</string>
+    <string name="notification_sound">Notification voice</string>
+    <string name="notification_key">notification_voice_key</string>
+    <string name="voice_key">voice_key</string>
+    <string name="notification_voice_title">Notification Voices</string>
+    <string name="voice_provider_title">Voice Provider</string>
+    <string name="voice_provider_key">voice_provider_key</string>
+    <string name="volume_title">Volume</string>
+    <string name="volume_key">volume_key</string>
+    <string name="connect_us_title">Connect us</string>
+    <string name="connect_key">connect_key</string>
+    <string name="web">Our Web</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
