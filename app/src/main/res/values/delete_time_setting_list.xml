@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="listOpt_deldte">
+    <string-array name="listOpt_delete">
         <item>1 month</item>
         <item>6 months</item>
         <item>1 year</item>

@@ -17,6 +17,7 @@
     <string name="account_summery">Contains account information</string>
     <string name="low_data_key">low_data_usage</string>
     <string name="low_data_summery">Using low data</string>
+    <string name="high_data_summery">Save all photos you uploaded</string>
     <string name="delete_not_use_title">Delete account automatically</string>
     <string name="delete_not_use_summery">Delete account if not use this app after …</string>
     <string name="delete_not_use_key">delete_not_use</string>
