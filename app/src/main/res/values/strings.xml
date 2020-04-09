@@ -10,7 +10,32 @@
     <string name="title_activity_home">HomeActivity</string>
     <string name="title_activity_add">AddActivity</string>
     <string name="title_activity_cycle">CycleActivity</string>
-
+    <string name="account_key">account_category</string>
+    <string name="account_title">Account</string>
+    <string name="data_usage_title">Data usage</string>
+    <string name="low_data_title">Low Data Usage</string>
+    <string name="account_summery">Contains account information</string>
+    <string name="low_data_key">low_data_usage</string>
+    <string name="low_data_summery">Using low data</string>
+    <string name="delete_not_use_title">Delete account automatically</string>
+    <string name="delete_not_use_summery">Delete account if not use this app after …</string>
+    <string name="delete_not_use_key">delete_not_use</string>
+    <string name="dialog_title">Choose one</string>
+    <string name="status_summary">Write About yourself</string>
+    <string name="status_key">status_edit_text</string>
+    <string name="status_title">Status</string>
+    <string name="sound_title">Sound</string>
+    <string name="notification_sound">Notification voice</string>
+    <string name="notification_key">notification_voice_key</string>
+    <string name="voice_key">voice_key</string>
+    <string name="notification_voice_title">Notification Voices</string>
+    <string name="voice_provider_title">Voice Provider</string>
+    <string name="voice_provider_key">voice_provider_key</string>
+    <string name="volume_title">Volume</string>
+    <string name="volume_key">volume_key</string>
+    <string name="connect_us_title">Connect us</string>
+    <string name="connect_key">connect_key</string>
+    <string name="web">Our Web</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -3,10 +3,12 @@ package edu.sharif.yousefi.first_app;
 import android.animation.AnimatorInflater;
 import android.animation.AnimatorSet;
 import android.content.Intent;
+import android.graphics.drawable.TransitionDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import edu.sharif.yousefi.first_app.account.LoginActivity;
@@ -35,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        TransitionDrawable transitionDrawable =(TransitionDrawable) signup_guid_btn.getBackground();
+        transitionDrawable.startTransition(1000);
+        transitionDrawable.reverseTransition(3000);
     }
 
     @Override

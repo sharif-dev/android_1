@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="optList_voice">
+      <item>Vibrate</item>
+      <item>Ring</item>
+      <item>Bird</item>
+    </string-array>
+    <string-array name="valList_voice">
+        <item>v</item>
+        <item>r</item>
+        <item>b</item>
+    </string-array>
+
+</resources>

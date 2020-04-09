@@ -12,8 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".add.ShowActivity"></activity>
-        <activity android:name=".add.AddFragmentActivity" />
+        <activity android:name=".setting.SettingActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+
+        </activity>
         <activity
             android:name=".CycleActivity"
             android:label="@string/title_activity_cycle"
