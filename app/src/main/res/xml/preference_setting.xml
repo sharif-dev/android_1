@@ -38,7 +38,11 @@
 
             <ListPreference
                 android:key="@string/voice_key"
-                android:title="@string/notification_voice_title" />
+                android:title="@string/notification_voice_title"
+                android:entries="@array/optList_voice"
+                android:entryValues="@array/valList_voice"
+                android:defaultValue="v"/>
+
 
             <PreferenceScreen
                 android:title="@string/voice_provider_title"
