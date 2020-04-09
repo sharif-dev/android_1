@@ -57,6 +57,15 @@
   [drawable](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/res/drawable/round_button_white.xml)
   
   [layout](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/res/layout/activity_main.xml)
+  
+  ## Preference (title / subscreen / intent )
+  [perference xml](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/res/xml/preference_setting.xml)
+  
+  [list array 1](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/res/values/delete_time_setting_list.xml)
+  
+  [list_array_2](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/res/values/voice_list.xml)
+  
+  [activity](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/java/edu/sharif/yousefi/first_app/setting/SettingActivity.java)
  
   
 # info
