@@ -52,6 +52,11 @@
   [drawable](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/res/drawable/profile_icon.xml)
   
   [layout](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/res/layout/back_layout.xml)
+  
+  ## shape drawable
+  [drawable](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/res/drawable/round_button_white.xml)
+  
+  [layout](https://github.com/sharif-dev/custom_buttons/blob/master/app/src/main/res/layout/activity_main.xml)
  
   
 # info
