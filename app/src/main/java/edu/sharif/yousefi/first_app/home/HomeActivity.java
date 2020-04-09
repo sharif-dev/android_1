@@ -1,6 +1,8 @@
 package edu.sharif.yousefi.first_app.home;
 
 import android.content.Intent;
+import android.graphics.drawable.LevelListDrawable;
+import android.media.Image;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
@@ -13,6 +15,7 @@ import android.widget.ImageView;
 
 import java.util.ArrayList;
 
+import edu.sharif.yousefi.first_app.GeneralFunc;
 import edu.sharif.yousefi.first_app.profile.ProfileActivity;
 import edu.sharif.yousefi.first_app.R;
 import edu.sharif.yousefi.first_app.add.AddActivity;
@@ -24,8 +27,11 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        ImageView home_btn = findViewById(R.id.home_btn);
+        GeneralFunc.setLevel(home_btn, 1);
 
-        Button profile_btn = findViewById(R.id.profile_hm_btn);
+        ImageView profile_btn = findViewById(R.id.profile_btn);
+        GeneralFunc.setLevel(profile_btn, 0);
         profile_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,7 +40,8 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        Button add_btn = findViewById(R.id.add_hm_btn);
+        ImageView add_btn = findViewById(R.id.add_btn);
+        GeneralFunc.setLevel(add_btn, 0);
         add_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

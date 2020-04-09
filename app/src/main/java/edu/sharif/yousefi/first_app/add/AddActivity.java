@@ -1,12 +1,16 @@
 package edu.sharif.yousefi.first_app.add;
 
 import android.content.Intent;
+import android.graphics.drawable.LevelListDrawable;
+import android.media.Image;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
+import edu.sharif.yousefi.first_app.GeneralFunc;
 import edu.sharif.yousefi.first_app.home.HomeActivity;
 import edu.sharif.yousefi.first_app.profile.ProfileActivity;
 import edu.sharif.yousefi.first_app.R;
@@ -20,8 +24,13 @@ public class AddActivity extends AppCompatActivity  implements SendMessageF{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
 
+        ImageView add_btn = findViewById(R.id.add_btn);
+        GeneralFunc.setLevel(add_btn, 1);
 
-        Button profile_btn = findViewById(R.id.profile_add_btn);
+
+        final ImageView profile_btn = findViewById(R.id.profile_btn);
+        GeneralFunc.setLevel(profile_btn, 0);
+
         profile_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,7 +38,8 @@ public class AddActivity extends AppCompatActivity  implements SendMessageF{
             }
         });
 
-        Button home_btn = findViewById(R.id.home_add_btn);
+        ImageView home_btn = findViewById(R.id.home_btn);
+        GeneralFunc.setLevel(home_btn, 0);
         home_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
