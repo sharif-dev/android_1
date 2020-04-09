@@ -2,12 +2,14 @@ package edu.sharif.yousefi.first_app.profile;
 
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
+import android.graphics.drawable.LevelListDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import edu.sharif.yousefi.first_app.GeneralFunc;
 import edu.sharif.yousefi.first_app.R;
 import edu.sharif.yousefi.first_app.add.AddActivity;
 import edu.sharif.yousefi.first_app.home.HomeActivity;
@@ -19,8 +21,12 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
+        ImageView profile_btn = findViewById(R.id.profile_btn);
+        GeneralFunc.setLevel(profile_btn, 1);
 
-        Button home_button = findViewById(R.id.home_pr_btn);
+
+        ImageView home_button = findViewById(R.id.home_btn);
+        GeneralFunc.setLevel(home_button, 0);
         home_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -28,7 +34,8 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
-        Button add_button = findViewById(R.id.add_pr_btn);
+        ImageView add_button = findViewById(R.id.add_btn);
+        GeneralFunc.setLevel(add_button, 0);
         add_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
