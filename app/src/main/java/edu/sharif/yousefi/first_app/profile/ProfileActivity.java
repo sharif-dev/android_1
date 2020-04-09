@@ -13,6 +13,7 @@ import edu.sharif.yousefi.first_app.GeneralFunc;
 import edu.sharif.yousefi.first_app.R;
 import edu.sharif.yousefi.first_app.add.AddActivity;
 import edu.sharif.yousefi.first_app.home.HomeActivity;
+import edu.sharif.yousefi.first_app.setting.SettingActivity;
 
 public class ProfileActivity extends AppCompatActivity {
     private AnimationDrawable avatarAnimation;
@@ -40,6 +41,16 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ProfileActivity.this, AddActivity.class));
+
+            }
+        });
+
+        ImageView setting_button = findViewById(R.id.setting_btn);
+        GeneralFunc.setLevel(setting_button, 0);
+        setting_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ProfileActivity.this, SettingActivity.class));
 
             }
         });

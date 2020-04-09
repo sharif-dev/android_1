@@ -14,6 +14,7 @@ import edu.sharif.yousefi.first_app.GeneralFunc;
 import edu.sharif.yousefi.first_app.home.HomeActivity;
 import edu.sharif.yousefi.first_app.profile.ProfileActivity;
 import edu.sharif.yousefi.first_app.R;
+import edu.sharif.yousefi.first_app.setting.SettingActivity;
 
 public class AddActivity extends AppCompatActivity  implements SendMessageF{
     ShowFragment showFragment;
@@ -44,6 +45,15 @@ public class AddActivity extends AppCompatActivity  implements SendMessageF{
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(AddActivity.this, HomeActivity.class));
+            }
+        });
+
+        ImageView setting_button = findViewById(R.id.setting_btn);
+        GeneralFunc.setLevel(setting_button, 0);
+        setting_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(AddActivity.this, SettingActivity.class));
             }
         });
 

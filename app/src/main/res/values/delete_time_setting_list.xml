@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listOpt">
+        <item>1 month</item>
+        <item>6 months</item>
+        <item>1 year</item>
+    </string-array>
+
+    <string-array name="listVal">
+        <item>1</item>
+        <item>6</item>
+        <item>12</item>
+    </string-array>
+</resources>

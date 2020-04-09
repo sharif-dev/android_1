@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/account_title"
+        android:summary="@string/account_summery"
+        android:key="@string/account_key">
+        <ListPreference
+                android:title="@string/delete_not_use_title"
+                android:summary="@string/delete_not_use_summery"
+                android:key="@string/delete_not_use_key"
+                android:dialogTitle="@string/dialog_title"
+                android:entries="@array/listOpt"
+                android:entryValues="@array/listVal"
+                android:defaultValue="12"
+                android:dialogIcon="@drawable/delete_user_icon"
+            />
+        <EditTextPreference
+                android:title="@string/status_title"
+                android:summary="@string/status_summary"
+                android:key="@string/status_key"
+            />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/data_usage_title">
+        <CheckBoxPreference
+            android:title="@string/low_data_title"
+            android:summary="@string/low_data_summery"
+            android:key="@string/low_data_key"
+            android:defaultValue="false"
+            />
+
+    </PreferenceCategory>
+</PreferenceScreen>
